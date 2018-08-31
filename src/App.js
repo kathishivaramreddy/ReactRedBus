@@ -8,6 +8,11 @@ class App extends Component{
         <h2>Red Bus</h2>
         <table border="1">
           <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
           </tr>
         </table>
       </div>

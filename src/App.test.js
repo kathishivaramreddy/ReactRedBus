@@ -29,4 +29,10 @@ describe('App', () => {
       expect(rows.length).toEqual(1);
      });
 
+     it('should have table with 1 row and 5 table header', () => {
+       const wrapper = shallow(<App />);
+       const rows = wrapper.find('th');
+       expect(rows.length).toEqual(5);
+     });
+
 });
