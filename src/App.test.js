@@ -95,5 +95,10 @@ describe('App', () => {
        expect(tableData.at(3).text()).toBe('5:45');
     })
 
+    it('should have INR 700 as Price', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('td');
+       expect(tableData.at(4).text()).toBe('700');
+    })
 
 });
