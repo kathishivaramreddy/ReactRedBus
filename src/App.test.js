@@ -71,4 +71,10 @@ describe('App', () => {
        expect(tabledata.length).toEqual(5);
     })
 
+    it('should have Iravath Travels as 1st table data', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('td');
+       expect(tableData.at(0).text()).toBe('Iravath Travels');
+    })
+
 });

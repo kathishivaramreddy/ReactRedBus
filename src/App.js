@@ -14,7 +14,7 @@ class App extends Component{
             <th>Arrival Time</th>
             <th>Price</th>
           </tr>
-          <td></td>
+          <td>Iravath Travels</td>
           <td></td>
           <td></td>
           <td></td>
