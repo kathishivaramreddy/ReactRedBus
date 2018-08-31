@@ -10,12 +10,17 @@ describe('App', () => {
     it('should have a h2 element', () => {
       const wrapper = shallow(<App />);
       expect(wrapper.exists('h2')).toEqual(true);
-        });
+      });
 
     it('should have heading as RedBus in h2 element', () => {
       const wrapper = shallow(<App />);
       const heading = wrapper.find('h2').text();
       expect(heading).toBe('Red Bus');
+      });
+
+    it('should have a table',() => {
+      const wrapper = shallow(<App />);
+      expect(wrapper.exists('table')).toEqual(true);
       });
 
 });
