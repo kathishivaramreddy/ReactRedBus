@@ -133,9 +133,23 @@ describe('App', () => {
        expect(secondTableHeader.at(0).text()).toBe('Bus Name');
     })
 
-    it('should have From - To as 2ndt table header in the second table', () => {
+    it('should have From - To as 2nd table header in the second table', () => {
       const wrapper = shallow(<App />);
       const secondTableHeader = wrapper.find('.secondTableHeadings');
        expect(secondTableHeader.at(1).text()).toBe('From - To');
     })
+
+    it('should have From - To as 2nd table header in the second table', () => {
+      const wrapper = shallow(<App />);
+      const secondTableHeader = wrapper.find('.secondTableHeadings');
+       expect(secondTableHeader.at(1).text()).toBe('From - To');
+    })
+
+    it('should have Departure Time as 3rd table header in the second table', () => {
+      const wrapper = shallow(<App />);
+      const secondTableHeader = wrapper.find('.secondTableHeadings');
+       expect(secondTableHeader.at(2).text()).toBe('Departure Time');
+    })
+
+
 });

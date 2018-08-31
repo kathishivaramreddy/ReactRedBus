@@ -29,7 +29,7 @@ class App extends Component{
           <tr className = "secondTableRows">
             <th className="secondTableHeadings">Bus Name</th>
             <th className="secondTableHeadings">From - To</th>
-            <th className="secondTableHeadings"></th>
+            <th className="secondTableHeadings">Departure Time</th>
             <th className="secondTableHeadings"></th>
             <th className="secondTableHeadings"></th>
           </tr>
