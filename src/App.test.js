@@ -83,4 +83,10 @@ describe('App', () => {
        expect(tableData.at(1).text()).toBe('Hyderabad - Banglore');
     })
 
+    it('should have 21:30 as Departure Time', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('td');
+       expect(tableData.at(2).text()).toBe('21:30');
+    })
+
 });
