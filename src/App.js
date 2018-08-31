@@ -11,7 +11,7 @@ class App extends Component{
             <th>Bus Name</th>
             <th>From - To</th>
             <th>Departure Time</th>
-            <th></th>
+            <th>Arrival Time</th>
             <th></th>
           </tr>
         </table>

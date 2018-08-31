@@ -53,4 +53,9 @@ describe('App', () => {
         expect(tableHeader.at(2).text()).toBe('Departure Time');
      })
 
+     it('should have Arrival Time as 4th table header', () => {
+       const wrapper = shallow(<App />);
+       const tableHeader = wrapper.find('th');
+        expect(tableHeader.at(3).text()).toBe('Arrival Time');
+     })
 });
