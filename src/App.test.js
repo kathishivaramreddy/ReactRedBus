@@ -58,4 +58,10 @@ describe('App', () => {
        const tableHeader = wrapper.find('th');
         expect(tableHeader.at(3).text()).toBe('Arrival Time');
      })
+
+     it('should have Price as 5th table header', () => {
+       const wrapper = shallow(<App />);
+       const tableHeader = wrapper.find('th');
+        expect(tableHeader.at(4).text()).toBe('Price');
+     })
 });

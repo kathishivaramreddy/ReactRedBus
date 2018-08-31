@@ -12,7 +12,7 @@ class App extends Component{
             <th>From - To</th>
             <th>Departure Time</th>
             <th>Arrival Time</th>
-            <th></th>
+            <th>Price</th>
           </tr>
         </table>
       </div>
