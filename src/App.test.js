@@ -158,4 +158,10 @@ describe('App', () => {
     })
 
 
+    it('should have Price as 5th table header in the second table', () => {
+      const wrapper = shallow(<App />);
+      const secondTableHeader = wrapper.find('.secondTableHeadings');
+      expect(secondTableHeader.at(4).text()).toBe('Price');
+    })
+
 });

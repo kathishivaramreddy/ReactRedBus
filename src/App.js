@@ -31,7 +31,7 @@ class App extends Component{
             <th className="secondTableHeadings">From - To</th>
             <th className="secondTableHeadings">Departure Time</th>
             <th className="secondTableHeadings">Arrival Time</th>
-            <th className="secondTableHeadings"></th>
+            <th className="secondTableHeadings">Price</th>
           </tr>
           <tr className = "secondTableRows"></tr>
           <tr className = "secondTableRows"></tr>
