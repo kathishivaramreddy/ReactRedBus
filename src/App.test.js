@@ -151,5 +151,11 @@ describe('App', () => {
        expect(secondTableHeader.at(2).text()).toBe('Departure Time');
     })
 
+    it('should have Arrival Time as 4th table header in the second table', () => {
+      const wrapper = shallow(<App />);
+      const secondTableHeader = wrapper.find('.secondTableHeadings');
+       expect(secondTableHeader.at(3).text()).toBe('Arrival Time');
+    })
+
 
 });
