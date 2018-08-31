@@ -23,10 +23,10 @@ describe('App', () => {
       expect(wrapper.exists('table')).toEqual(true);
       });
 
-    it('should have table with 1 row', () => {
+    it('should have table with 2 row', () => {
       const wrapper = shallow(<App />);
       const rows = wrapper.find('tr');
-      expect(rows.length).toEqual(1);
+      expect(rows.length).toEqual(2);
      });
 
      it('table should have 5 table header', () => {
@@ -64,4 +64,5 @@ describe('App', () => {
        const tableHeader = wrapper.find('th');
         expect(tableHeader.at(4).text()).toBe('Price');
      })
+     
 });
