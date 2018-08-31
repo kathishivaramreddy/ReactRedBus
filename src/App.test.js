@@ -101,4 +101,11 @@ describe('App', () => {
        expect(tableData.at(4).text()).toBe('700');
     })
 
+
+    it('should have 2 tables', () => {
+      const wrapper = shallow(<App />);
+      const table = wrapper.find('table')
+      expect(table.length).toEqual(2);
+    })
+    
 });

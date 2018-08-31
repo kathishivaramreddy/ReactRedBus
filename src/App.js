@@ -22,6 +22,9 @@ class App extends Component{
           <tr>
           </tr>
         </table>
+        <br></br>
+        <table id="t02">
+        </table>
       </div>
     );
   }
