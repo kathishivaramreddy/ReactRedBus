@@ -10,7 +10,7 @@ class App extends Component{
           <tr>
             <th>Bus Name</th>
             <th>From - To</th>
-            <th></th>
+            <th>Departure Time</th>
             <th></th>
             <th></th>
           </tr>
