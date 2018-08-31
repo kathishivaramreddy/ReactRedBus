@@ -26,6 +26,17 @@ class App extends Component{
         <br></br>
 
         <table className="secondTable" border="1">
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows"></tr>
         </table>
       </div>
     );

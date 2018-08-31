@@ -109,15 +109,15 @@ describe('App', () => {
     })
 
 
-    it('should have second tables', () => {
+    it('should have second table', () => {
       const wrapper = shallow(<App />);
       const table = wrapper.find('.secondTable')
       expect(table.length).toEqual(1);
     })
 
-    // it('should have 11 rows in the 2nd table', () => {
-    //   const wrapper = shallow(<App />);
-    //   const table = wrapper.find('table');
-    //   expect(table.at(1)).toEqual(11);
-    // })
+    it('should have 11 rows in the second table', () => {
+      const wrapper = shallow(<App />);
+      const rows = wrapper.find('.secondTableRows');
+      expect(rows.length).toEqual(11);
+    })
 });
