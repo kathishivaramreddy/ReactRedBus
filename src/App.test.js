@@ -20,12 +20,13 @@ describe('App', () => {
 
     it('should have a table',() => {
       const wrapper = shallow(<App />);
-      expect(wrapper.exists('table')).toEqual(true);
+      const table = wrapper.find('.firstTable')
+      expect(table.length).toEqual(1);
       });
 
     it('should have table with 2 row', () => {
       const wrapper = shallow(<App />);
-      const rows = wrapper.find('tr');
+      const rows = wrapper.find('.firstTableRows');
       expect(rows.length).toEqual(2);
      });
 
@@ -102,10 +103,15 @@ describe('App', () => {
     })
 
 
-    it('should have 2 tables', () => {
+    it('should have second tables', () => {
       const wrapper = shallow(<App />);
-      const table = wrapper.find('table')
-      expect(table.length).toEqual(2);
+      const table = wrapper.find('.secondTable')
+      expect(table.length).toEqual(1);
     })
-    
+
+    // it('should have 11 rows in the 2nd table', () => {
+    //   const wrapper = shallow(<App />);
+    //   const table = wrapper.find('table');
+    //   expect(table.at(1)).toEqual(11);
+    // })
 });
