@@ -77,4 +77,10 @@ describe('App', () => {
        expect(tableData.at(0).text()).toBe('Iravath Travels');
     })
 
+    it('should have Hyderabad - Banglore as 2nd table data', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('td');
+       expect(tableData.at(1).text()).toBe('Hyderabad - Banglore');
+    })
+
 });
