@@ -18,13 +18,19 @@ describe('App', () => {
       expect(heading).toBe('Red Bus');
       });
 
-    it('should have a table',() => {
+    it('should have two tables ',() =>{
+      const wrapper = shallow(<App />);
+      const table = wrapper.find('table');
+      expect(table.length).toEqual(2);
+    })
+
+    it('should have a table with className as firstTable',() => {
       const wrapper = shallow(<App />);
       const table = wrapper.find('.firstTable')
       expect(table.length).toEqual(1);
       });
 
-    it('should have table with 2 row', () => {
+    it('should have 2 row in firstTable', () => {
       const wrapper = shallow(<App />);
       const rows = wrapper.find('.firstTableRows');
       expect(rows.length).toEqual(2);
