@@ -40,7 +40,13 @@ class App extends Component{
             <td className = 'secondTableData'>14:30</td>
             <td className = 'secondTableData'>INR 700</td>
           </tr>
-          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows">
+            <td className = 'secondTableData'>Iravath Travels</td>
+            <td className = 'secondTableData'>Hyderabad-Kolkata</td>
+            <td className = 'secondTableData'>7:30</td>
+            <td className = 'secondTableData'>16:30</td>
+            <td className = 'secondTableData'>INR 700</td>
+          </tr>
           <tr className = "secondTableRows"></tr>
           <tr className = "secondTableRows"></tr>
           <tr className = "secondTableRows"></tr>
