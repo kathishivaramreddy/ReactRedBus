@@ -28,7 +28,7 @@ class App extends Component{
         <table className="secondTable" border="1">
           <tr className = "secondTableRows">
             <th className="secondTableHeadings">Bus Name</th>
-            <th className="secondTableHeadings"></th>
+            <th className="secondTableHeadings">From - To</th>
             <th className="secondTableHeadings"></th>
             <th className="secondTableHeadings"></th>
             <th className="secondTableHeadings"></th>
