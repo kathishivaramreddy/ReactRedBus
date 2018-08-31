@@ -64,5 +64,11 @@ describe('App', () => {
        const tableHeader = wrapper.find('th');
         expect(tableHeader.at(4).text()).toBe('Price');
      })
-     
+
+     it('should have 5 table data',() => {
+       const wrapper = shallow(<App />);
+       const tabledata = wrapper.find('td');
+       expect(tabledata.length).toEqual(5);
+    })
+
 });

@@ -14,6 +14,11 @@ class App extends Component{
             <th>Arrival Time</th>
             <th>Price</th>
           </tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
           <tr>
           </tr>
         </table>
