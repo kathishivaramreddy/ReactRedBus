@@ -163,4 +163,30 @@ describe('App', () => {
       expect(secondTableHeader.at(4).text()).toBe('Price');
     })
 
+    it('should have Iravath Travels as table data in the second table', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('.secondTableData');
+       expect(tableData.at(0).text()).toBe('Iravath Travels');
+    })
+    it('should have Hyderabad - Kolkata as table data in the second table', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('.secondTableData');
+       expect(tableData.at(1).text()).toBe('Hyderabad-Kolkata');
+    })
+    it('should have 5:30 as departure time in the second table', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('.secondTableData');
+       expect(tableData.at(2).text()).toBe('5:30');
+    })
+    it('should have 14:30 as Arrival Time in the second table', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('.secondTableData');
+       expect(tableData.at(3).text()).toBe('14:30');
+    })
+    it('should have 700 Rs as Price in the second table', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('.secondTableData');
+       expect(tableData.at(4).text()).toBe('INR 700');
+    })
+
 });

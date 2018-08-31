@@ -25,7 +25,7 @@ class App extends Component{
 
         <br></br>
 
-        <table className="secondTable" border="1">
+        <table className="secondTable" border="1" >
           <tr className = "secondTableRows">
             <th className="secondTableHeadings">Bus Name</th>
             <th className="secondTableHeadings">From - To</th>
@@ -33,7 +33,13 @@ class App extends Component{
             <th className="secondTableHeadings">Arrival Time</th>
             <th className="secondTableHeadings">Price</th>
           </tr>
-          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows">
+            <td className = 'secondTableData'>Iravath Travels</td>
+            <td className = 'secondTableData'>Hyderabad-Kolkata</td>
+            <td className = 'secondTableData'>5:30</td>
+            <td className = 'secondTableData'>14:30</td>
+            <td className = 'secondTableData'>INR 700</td>
+          </tr>
           <tr className = "secondTableRows"></tr>
           <tr className = "secondTableRows"></tr>
           <tr className = "secondTableRows"></tr>
