@@ -89,4 +89,11 @@ describe('App', () => {
        expect(tableData.at(2).text()).toBe('21:30');
     })
 
+    it('should have 5:45 as Arrival Time', () => {
+      const wrapper = shallow(<App />);
+      const tableData = wrapper.find('td');
+       expect(tableData.at(3).text()).toBe('5:45');
+    })
+
+
 });
