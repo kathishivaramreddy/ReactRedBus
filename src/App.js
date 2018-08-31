@@ -9,7 +9,7 @@ class App extends Component{
         <table border="1">
           <tr>
             <th>Bus Name</th>
-            <th></th>
+            <th>From - To</th>
             <th></th>
             <th></th>
             <th></th>

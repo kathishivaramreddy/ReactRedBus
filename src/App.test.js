@@ -41,6 +41,10 @@ describe('App', () => {
         expect(tableHeader.at(0).text()).toBe('Bus Name');
      })
 
-    
+     it('should have From - To as 2nd table header', () => {
+       const wrapper = shallow(<App />);
+       const tableHeader = wrapper.find('th');
+        expect(tableHeader.at(1).text()).toBe('From - To');
+     })
 
 });
