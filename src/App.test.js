@@ -115,58 +115,58 @@ describe('App', () => {
       expect(table.length).toEqual(1);
     })
 
-    it('should have 11 rows in the second table', () => {
+    it('should have 21 rows in the second table', () => {
       const wrapper = shallow(<App />);
       const rows = wrapper.find('.secondTableRows');
-      expect(rows.length).toEqual(11);
+      expect(rows.length).toEqual(21);
     })
 
     it('should have 5 table heading in the second table ' ,() => {
         const wrapper = shallow(<App />);
-        const tableHeadings = wrapper.find('.secondTableHeadings');
+        const tableHeadings = wrapper.find('.secondTableHeader');
         expect(tableHeadings.length).toEqual(5)
     })
 
     it('should have Bus Name as 1st table header in the second table', () => {
       const wrapper = shallow(<App />);
-      const secondTableHeader = wrapper.find('.secondTableHeadings');
+      const secondTableHeader = wrapper.find('.secondTableHeader');
        expect(secondTableHeader.at(0).text()).toBe('Bus Name');
     })
 
     it('should have From - To as 2nd table header in the second table', () => {
       const wrapper = shallow(<App />);
-      const secondTableHeader = wrapper.find('.secondTableHeadings');
+      const secondTableHeader = wrapper.find('.secondTableHeader');
        expect(secondTableHeader.at(1).text()).toBe('From - To');
     })
 
     it('should have From - To as 2nd table header in the second table', () => {
       const wrapper = shallow(<App />);
-      const secondTableHeader = wrapper.find('.secondTableHeadings');
+      const secondTableHeader = wrapper.find('.secondTableHeader');
        expect(secondTableHeader.at(1).text()).toBe('From - To');
     })
 
     it('should have Departure Time as 3rd table header in the second table', () => {
       const wrapper = shallow(<App />);
-      const secondTableHeader = wrapper.find('.secondTableHeadings');
+      const secondTableHeader = wrapper.find('.secondTableHeader');
        expect(secondTableHeader.at(2).text()).toBe('Departure Time');
     })
 
     it('should have Arrival Time as 4th table header in the second table', () => {
       const wrapper = shallow(<App />);
-      const secondTableHeader = wrapper.find('.secondTableHeadings');
+      const secondTableHeader = wrapper.find('.secondTableHeader');
        expect(secondTableHeader.at(3).text()).toBe('Arrival Time');
     })
 
     it('should have Price as 5th table header in the second table', () => {
       const wrapper = shallow(<App />);
-      const secondTableHeader = wrapper.find('.secondTableHeadings');
+      const secondTableHeader = wrapper.find('.secondTableHeader');
       expect(secondTableHeader.at(4).text()).toBe('Price');
     })
 
-    it('should have Iravath Travels as table data in the second table', () => {
+    it('should have Iravath as table data in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
-       expect(tableData.at(0).text()).toBe('Iravath Travels');
+       expect(tableData.at(0).text()).toBe('Iravath');
     })
     it('should have Hyderabad - Kolkata as table data in the second table', () => {
       const wrapper = shallow(<App />);
@@ -178,28 +178,28 @@ describe('App', () => {
       const tableData = wrapper.find('.secondTableData');
        expect(tableData.at(2).text()).toBe('5:30');
     })
-    it('should have 14:30 as Arrival Time in the second table', () => {
+    it('should have 12:30 as Arrival Time in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
-       expect(tableData.at(3).text()).toBe('14:30');
+       expect(tableData.at(3).text()).toBe('12:30');
     })
     it('should have 700 Rs as Price in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
-       expect(tableData.at(4).text()).toBe('INR 700');
+       expect(tableData.at(4).text()).toBe('INR700');
     })
 
     it('should have Iravath Travels as table data in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
-       expect(tableData.at(5).text()).toBe('Iravath Travels');
+       expect(tableData.at(5).text()).toBe('Iravath');
     })
     it('should have Hyderabad - Kolkata as table data in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
        expect(tableData.at(6).text()).toBe('Hyderabad-Kolkata');
     })
-    it('should have 5:30 as departure time in the second table', () => {
+    it('should have 7:30 as departure time in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
        expect(tableData.at(7).text()).toBe('7:30');
@@ -207,12 +207,12 @@ describe('App', () => {
     it('should have 14:30 as Arrival Time in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
-       expect(tableData.at(8).text()).toBe('16:30');
+       expect(tableData.at(8).text()).toBe('14:30');
     })
     it('should have 700 Rs as Price in the second table', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.secondTableData');
-       expect(tableData.at(9).text()).toBe('INR 700');
+       expect(tableData.at(9).text()).toBe('INR700');
     })
 
 });
