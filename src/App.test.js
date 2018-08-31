@@ -38,37 +38,37 @@ describe('App', () => {
 
      it('table should have 5 table header', () => {
        const wrapper = shallow(<App />);
-       const tableHeader = wrapper.find('th');
+       const tableHeader = wrapper.find('.firstTableHeadings');
        expect(tableHeader.length).toEqual(5);
      });
 
      it('should have Bus Name as 1st table header', () => {
        const wrapper = shallow(<App />);
-       const tableHeader = wrapper.find('th');
+       const tableHeader = wrapper.find('.firstTableHeadings');
         expect(tableHeader.at(0).text()).toBe('Bus Name');
      })
 
      it('should have From - To as 2nd table header', () => {
        const wrapper = shallow(<App />);
-       const tableHeader = wrapper.find('th');
+       const tableHeader = wrapper.find('.firstTableHeadings');
         expect(tableHeader.at(1).text()).toBe('From - To');
      })
 
      it('should have Departure Time as 3rd table header', () => {
        const wrapper = shallow(<App />);
-       const tableHeader = wrapper.find('th');
+       const tableHeader = wrapper.find('.firstTableHeadings');
         expect(tableHeader.at(2).text()).toBe('Departure Time');
      })
 
      it('should have Arrival Time as 4th table header', () => {
        const wrapper = shallow(<App />);
-       const tableHeader = wrapper.find('th');
+       const tableHeader = wrapper.find('.firstTableHeadings');
         expect(tableHeader.at(3).text()).toBe('Arrival Time');
      })
 
      it('should have Price as 5th table header', () => {
        const wrapper = shallow(<App />);
-       const tableHeader = wrapper.find('th');
+       const tableHeader = wrapper.find('.firstTableHeadings');
         expect(tableHeader.at(4).text()).toBe('Price');
      })
 
@@ -119,5 +119,17 @@ describe('App', () => {
       const wrapper = shallow(<App />);
       const rows = wrapper.find('.secondTableRows');
       expect(rows.length).toEqual(11);
+    })
+
+    it('should have 5 table heading in the second table ' ,() => {
+        const wrapper = shallow(<App />);
+        const tableHeadings = wrapper.find('.secondTableHeadings');
+        expect(tableHeadings.length).toEqual(5)
+    })
+
+    it('should have Bus Name as 1st table header in the second table', () => {
+      const wrapper = shallow(<App />);
+      const secondTableHeader = wrapper.find('.secondTableHeadings');
+       expect(secondTableHeader.at(0).text()).toBe('Bus Name');
     })
 });

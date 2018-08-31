@@ -8,25 +8,31 @@ class App extends Component{
         <h2>Red Bus</h2>
         <table className ="firstTable" border="1">
           <tr className="firstTableRows">
-            <th>Bus Name</th>
-            <th>From - To</th>
-            <th>Departure Time</th>
-            <th>Arrival Time</th>
-            <th>Price</th>
+            <th className = 'firstTableHeadings'>Bus Name</th>
+            <th className = 'firstTableHeadings'>From - To</th>
+            <th className = 'firstTableHeadings'>Departure Time</th>
+            <th className = 'firstTableHeadings'>Arrival Time</th>
+            <th className = 'firstTableHeadings'>Price</th>
           </tr>
           <tr className="firstTableRows">
-            <td>Iravath Travels</td>
-            <td>Hyderabad - Banglore</td>
-            <td>21:30</td>
-            <td>5:45</td>
-            <td>700</td>
+            <td className="firstTableData">Iravath Travels</td>
+            <td className="firstTableData">Hyderabad - Banglore</td>
+            <td className="firstTableData">21:30</td>
+            <td className="firstTableData">5:45</td>
+            <td className="firstTableData">700</td>
           </tr>
         </table>
 
         <br></br>
 
         <table className="secondTable" border="1">
-          <tr className = "secondTableRows"></tr>
+          <tr className = "secondTableRows">
+            <th className="secondTableHeadings">Bus Name</th>
+            <th className="secondTableHeadings"></th>
+            <th className="secondTableHeadings"></th>
+            <th className="secondTableHeadings"></th>
+            <th className="secondTableHeadings"></th>
+          </tr>
           <tr className = "secondTableRows"></tr>
           <tr className = "secondTableRows"></tr>
           <tr className = "secondTableRows"></tr>
