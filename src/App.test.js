@@ -23,4 +23,10 @@ describe('App', () => {
       expect(wrapper.exists('table')).toEqual(true);
       });
 
+    it('should have table with 1 row', () => {
+      const wrapper = shallow(<App />);
+      const rows = wrapper.find('tr');
+      expect(rows.length).toEqual(1);
+     });
+
 });

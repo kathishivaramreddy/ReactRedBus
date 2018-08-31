@@ -6,7 +6,10 @@ class App extends Component{
     return(
       <div className="App">
         <h2>Red Bus</h2>
-        <table border="1"> </table>
+        <table border="1">
+          <tr>
+          </tr>
+        </table>
       </div>
     );
   }
