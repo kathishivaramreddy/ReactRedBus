@@ -8,7 +8,7 @@ class App extends Component{
         <h2>Red Bus</h2>
         <table border="1">
           <tr>
-            <th></th>
+            <th>Bus Name</th>
             <th></th>
             <th></th>
             <th></th>

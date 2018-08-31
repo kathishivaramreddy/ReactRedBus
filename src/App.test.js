@@ -31,8 +31,16 @@ describe('App', () => {
 
      it('should have table with 1 row and 5 table header', () => {
        const wrapper = shallow(<App />);
-       const rows = wrapper.find('th');
-       expect(rows.length).toEqual(5);
+       const tableHeader = wrapper.find('th');
+       expect(tableHeader.length).toEqual(5);
      });
+
+     it('should have Bus Name as 1st table header', () => {
+       const wrapper = shallow(<App />);
+       const tableHeader = wrapper.find('th');
+        expect(tableHeader.at(0).text()).toBe('Bus Name');
+     })
+
+    
 
 });
