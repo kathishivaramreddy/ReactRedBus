@@ -81,7 +81,7 @@ describe('App', () => {
     it('should have Iravath Travels as 1st table data', () => {
       const wrapper = shallow(<App />);
       const tableData = wrapper.find('.firstTableData');
-       expect(tableData.at(0).text()).toBe('Iravath Travels');
+       expect(tableData.at(0).text()).toBe('Iravath');
     })
 
     it('should have Hyderabad - Banglore as 2nd table data', () => {
